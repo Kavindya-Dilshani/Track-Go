@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Go</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr60Sfk_9CJ1MrlCDQiI6dCoKAh2OjP9U&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+<body>
+
+    <header>
+        <h1>Track GO</h1>
+        <div>
+            <input type="text" id="from" placeholder="Origin">
+        </div>
+        <div>
+            <input type="text" id="to" placeholder="Destination">
+        </div>
+        <div class="container">
+            <label for="transportationMode">Travel Mode</label>
+            <select id="transportationMode">
+                <option value="DRIVING">Driving</option>
+                <option value="WALKING">Walking</option>
+                <option value="BICYCLING"> Bicycling</option>
+                <option value="TRANSIT"> Transit</option>
+            </select>
+            <div id="destination-info">
+                <p id="distance">Distance:<span></span></p>
+                <p id="duration">Duration: <span></span></p>
+            </div>
+        </div>
+    </header>
+    <div id="map"></div>
+</body>
+
+</html>
